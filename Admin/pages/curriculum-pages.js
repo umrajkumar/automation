@@ -9,7 +9,7 @@ var curriculumPages = function(){
 	var saveSection = element(by.id("curriculumForm:j_idt496"));
 	var saveCurriculum = element(by.id("curriculumForm:saveCurriculumBtn"));
 	
-	
+	//
 	this.clickCreatNewCurriculum = function(){
 		creatNewCurriculum.click();
 	};
