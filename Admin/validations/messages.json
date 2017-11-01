@@ -1,0 +1,38 @@
+{
+	"validationMessages": {
+		"signup": {
+			"emailMandatoryError": "Requires a valid email",
+			"fullNameMandatoryError": "Requires a full name",
+			"invalidEmailError": "Requires a valid email",
+			"existingEmailError": "Your email is already registered"
+		},
+		"login": {
+			"invalidCredentials": "We can't find an account for that email & password combination. Please try again or reset your password.",
+			"invalidEmail": "Requires a valid email",
+			"deactivatedUser" : "Your account is disabled. Please contact support@revature.com",
+			"lockedUser" : "Due to some security reason this accout has been locked for 15 minutes"
+		},
+		"dashboard": {
+			"welcomeMessageAfterActivation": "RevaturePro is an online platform that provides no-risk pathways to advance career options and increase earnings. You’ve taken the first step in this process by signing up. Your next step is to browse our projects and enroll in the one that suits your career goals and likes best.",
+			"welcomeMessageBeforeActivation": "Thanks for signing up. We’ve just sent you an email with a link and instructions to activate your RevaturePro account. You’ll need to complete this step before you can access many of the features of this platform."
+		},
+		"profile": {
+		    "profileNameExistsErrorMessage": "Profile name is already taken. Try another.",
+			"basicDetailsUpdatePass": "Profile updated sucessfully.",
+			"basicDetailsUpdateFail": "Profile updation failed.",
+			"educationDetailsUpdatePass": "Education details updated sucessfully.",
+			"educationDetailsUpdateFail": "Education details updation failed.",
+			"veteranDetailsUpdatePass": "Veteran details updated sucessfully.",
+			"veteranDetailsUpdateFail": "Veteran details updation failed.",
+			"otherDetailsUpdatePass": "Other details updated sucessfully.",
+			"otherDetailsUpdateFail": "Other details updation failed."
+		},
+		"ticket":{
+			"successfullyCreated": "Ticket Saved Successfully"
+		},
+		"portfolio":{
+			"educationDetailsAddedPassMessage": "Education added successfully",
+			"educationDetailsUpdatedPassMessage": "Education updated successfully"
+		}
+	}
+}

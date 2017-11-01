@@ -1,0 +1,26 @@
+{
+"testData":{
+"environment":{
+"url":"https://qa.revature.com/core"
+},
+"loginCredential":{
+"userName":"rktradmin@yopmail.com",
+"password":"Pass123$"
+},
+"salesforcecode":{
+"salecode":"001i000000LPJmv" 
+},
+"couponcode":{
+"code":"12345"
+},
+"contentsubscribtion":{
+"project1":"MySwoleMate 100",
+"course1":"AngularJs 2",
+"quiz1":"ADO.NET - Data Providers"
+},
+"successmessage":{
+"orgcreationsucessmessage":"Organization created successfully.",
+"orgActivationcodesucessmessage":"Activation code saved successfully."
+}
+}
+}

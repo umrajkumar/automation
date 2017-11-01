@@ -1,0 +1,21 @@
+{
+  "quizzes": {
+    "names": [
+      "C# - Constructors & References",
+      "ASP.NET Web Forms - Master Pages",
+      "ASP.NET Web Forms - Validation Controls",
+      "HTML - Dashboard",
+      "C# - Inheritance",
+      "CSS - Dashboard",
+      "JavaScript - Dashboard",
+      "Core Java Quiz",
+      "Test assessment for automation"
+    ],
+    "defaultInstructions": [
+      "When taking the quiz you will be able to see how much time you have remaining",
+      "When you have completed the quiz click finish button to record your answers",
+      "You will receive marks on completion of the quiz",
+      "Conclusion & Notes."
+    ]
+  }
+}
