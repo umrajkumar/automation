@@ -185,6 +185,24 @@ getRandomDomainName : function(){
 		var randomodomainname = (stringValue + uniqueValue);
 		return randomodomainname;
 	
-}
+},
+getRandomSectionName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Section";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
+getRandomModuleName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Module";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
 
 }

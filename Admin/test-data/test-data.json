@@ -21,6 +21,18 @@
 "successmessage":{
 "orgcreationsucessmessage":"Organization created successfully.",
 "orgActivationcodesucessmessage":"Activation code saved successfully."
+},
+"activitype":{
+"quiztype":"quiz",
+"referencetype":"reference",
+"lecturetype":"lecture",
+"assignmenttype":"assignment",
+"gradingtype":"grade",
+"videotype":"video",
+"projecttype":"project"
+},
+"attachment":{
+"jpeg":"img_01.jpg"
 }
 }
 }
