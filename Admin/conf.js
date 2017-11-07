@@ -24,7 +24,7 @@ exports.config = {
     allScriptsTimeout: 120000,
     specs:
         [
-          './modules/curriculumCreation.js',
+         './specs/curriculum-spec.js',
 		  
         ],
 
