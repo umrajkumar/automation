@@ -120,7 +120,7 @@ var curriculumPages = function(){
 	};
 	this.clickAddActivityinmodule = function(secno,modno){
 		
-		element(by.xpath("html/body/div[2]/div[2]/div/form/div/div[3]/div[1]/span/span/div/div/div[3]/div/ol/li["+secno+"]/ol/li["+modno+"]/div[2]/div/a[1]")).click();;
+		element(by.xpath(".//*[@class='dd dd-draghandle cur-tree-width']/ol/li["+secno+"]/ol/li["+modno+"]/div[2]/div/a[1]")).click();;
 		//element(by.xpath("html/body/div[2]/div[2]/div/form/div/div[3]/div[1]/span/span/div/div/div[3]/div/ol/li/ol/li["+no+"]/div[2]/div/a[1]")).click();
 	};
 	
