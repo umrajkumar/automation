@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="createorgination" timestamp="2017-11-07T18:22:03" hostname="localhost" time="221.024" errors="0" tests="1" skipped="0" disabled="0" failures="0">
-  <testcase classname="createorgination" name="curriculum With All Activities with Major , Hidedescription And Schduled" time="206.937" />
+ <testsuite name="createorgination" timestamp="2017-11-09T19:16:55" hostname="localhost" time="245.256" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="createorgination" name="curriculum With All Activities with Major , Hidedescription And Schduled" time="230.199">
+   <failure type="exception" message="Failed: No element found using locator: By(xpath, .//*[@id=&apos;curriculumForm:activityTypeId&apos;])"><![CDATA[NoSuchElementError: No element found using locator: By(xpath, .//*[@id='curriculumForm:activityTypeId'])
+    at WebDriverError (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:27:5)
+    at NoSuchElementError (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:168:5)
+    at elementArrayFinder.getWebElements.then (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\lib\element.ts:851:17)
+    at ManagedPromise.invokeCallback_ (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1366:14)
+    at TaskQueue.execute_ (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2970:14)
+    at TaskQueue.executeNext_ (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2953:27)
+    at asyncRun (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2813:27)
+    at C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:676:7
+    at process._tickCallback (internal/process/next_tick.js:109:7)Error
+    at ElementArrayFinder.applyAction_ (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\lib\element.ts:482:23)
+    at ElementArrayFinder.(anonymous function) [as click] (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\lib\element.ts:96:21)
+    at ElementFinder.(anonymous function) [as click] (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\lib\element.ts:873:14)
+    at curriculumPages.selectActivityType (E:\Rk\gitfiles\automation\Admin\pages\curriculum-pages.js:173:56)
+    at Object.createQuizActivityBasicFields (E:\Rk\gitfiles\automation\Admin\modules\curriculumCreation.js:75:21)
+    at Object.createQuizAsMajoractivity (E:\Rk\gitfiles\automation\Admin\modules\curriculumCreation.js:101:8)
+    at Object.moduleWithAllActivitiesAsMajor (E:\Rk\gitfiles\automation\Admin\modules\curriculumCreation.js:434:9)
+    at Object.createCurriculumWithAllActivitieswithMajorAndHidedescriptionAndSchduled (E:\Rk\gitfiles\automation\Admin\modules\curriculumCreation.js:618:9)
+    at UserContext.<anonymous> (E:\Rk\gitfiles\automation\Admin\specs\curriculum-spec.js:19:15)
+    at C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+From: Task: Run it("curriculum With All Activities with Major , Hidedescription And Schduled") in control flow
+    at UserContext.<anonymous> (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at QueueRunner.execute (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+    at Spec.execute (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+    at UserContext.fn (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+    at attempt (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (E:\Rk\gitfiles\automation\Admin\specs\curriculum-spec.js:18:6)
+    at addSpecsToSuite (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Mvision\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (E:\Rk\gitfiles\automation\Admin\specs\curriculum-spec.js:9:1)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)]]>
+   </failure>
+  </testcase>
  </testsuite>
 </testsuites>

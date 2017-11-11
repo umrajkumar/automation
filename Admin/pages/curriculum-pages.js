@@ -8,7 +8,7 @@ var curriculumPages = function(){
 	var sectionTitle = element(by.name("curriculumForm:sectionTitleId"));
 	var saveSection = element(by.id("curriculumForm:j_idt496"));
 	var saveCurriculum = element(by.xpath(".//*[@id='curriculumForm:saveCurriculumBtn']"));
-	var addActivity = element(by.linkText("Add Activity"));
+	
 		
 	var activityName = element(by.id("curriculumForm:activityTitleId"));
 	var selectActvityType = element(by.xpath(".//*[@id='curriculumForm:activityTypeId']"));
@@ -80,7 +80,7 @@ var curriculumPages = function(){
 	var saveReferenceVideo = element(by.xpath(".//*[@id='curriculumForm:j_idt744']"));
 	
 	
-	var addModule = element(by.linkText("Add Module"));
+	
 	var moduleName = element(by.id("curriculumForm:moduleTitleId"));
 	var moduleReuseableCheckBox = element(by.xpath(".//*[@id='curriculumForm:asd']/div/fieldset[1]/div[2]/div/div/input"));
 	var moduleHideDescription = element(by.xpath(".//*[@id='curriculumForm:asd']/div/fieldset[1]/div[5]/div/div/input"));
@@ -88,16 +88,16 @@ var curriculumPages = function(){
 	var moduleDuration = element(by.id("curriculumForm:moduleDurationId"));
 	var moduleHidden = element(by.xpath(".//*[@id='curriculumForm:asd']/div/fieldset[3]/div/div/div/input"));
 	var moduleSave = element(by.xpath(".//*[@id='curriculumForm:j_idt595']"));
-	var addActivityinmodule = element(by.xpath(".//*[@id='curriculumForm:j_idt275:0:j_idt289:0:addNewActivity']"));
+
 	
 	
 	
 	
-	this.clickAddModule = function(){
-		addModule.click();
+	this.clickAddModule = function(no){
+	element(by.xpath(".//*[@id='curriculumForm:j_idt275:"+no+":addNewModule']")).click();
 	};
-	this.enterModuleName = function(moduleName){
-		moduleName.sendKeys(moduleName);
+	this.enterModuleName = function(moduleNames){
+		moduleName.sendKeys(moduleNames);
 	};
 	
 	this.clickModuleReuseableCheckBox = function(){
@@ -118,8 +118,10 @@ var curriculumPages = function(){
 	this.clickModuleSave= function(){
 		moduleSave.click();
 	};
-	this.clickAddActivityinmodule = function(){
-		addActivityinmodule.click();
+	this.clickAddActivityinmodule = function(secno,modno){
+		
+		element(by.xpath(".//*[@class='dd dd-draghandle cur-tree-width']/ol/li["+secno+"]/ol/li["+modno+"]/div[2]/div/a[1]")).click();;
+		//element(by.xpath("html/body/div[2]/div[2]/div/form/div/div[3]/div[1]/span/span/div/div/div[3]/div/ol/li/ol/li["+no+"]/div[2]/div/a[1]")).click();
 	};
 	
 	
@@ -142,8 +144,8 @@ var curriculumPages = function(){
 		creatNewCurriculum.click();
 	};
 	
-	this.enterCurriculumTitle = function(){
-		title.sendKeys("testsd");
+	this.enterCurriculumTitle = function(curriculumtitle){
+		title.sendKeys(curriculumtitle);
 	};
 	this.enterCurrilculumDuration = function(){
 		duration.sendKeys("12");
@@ -161,8 +163,8 @@ var curriculumPages = function(){
 	this.clickSaveCurriculum=function() {
 		saveCurriculum.click();
 	};
-	this.clickAddActivity = function(){
-		addActivity.click();
+	this.clickAddSectionActivity = function(no){
+		element(by.xpath(".//*[@id='curriculumForm:j_idt275:"+no+":addNewActivity']")).click();
 	};
 	this.enterActivityName=function(activityname){
 		activityName.sendKeys(activityname);

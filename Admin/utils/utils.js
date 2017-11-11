@@ -204,5 +204,14 @@ getRandomModuleName : function(){
 		return randomodomainname;
 	
 },
+getRandomCurriculumName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Curriculum";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
 
 }
