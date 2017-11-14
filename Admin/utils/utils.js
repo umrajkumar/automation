@@ -204,5 +204,77 @@ getRandomModuleName : function(){
 		return randomodomainname;
 	
 },
+getRandomCurriculumName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "curriculum";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
+getRandomQuizName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "quiz";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
+getRandomLectureName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Lecture";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
+getRandomReferenceName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Reference";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
+getRandomAssignmentName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Assignment";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
+getRandomVideoName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Video";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
+getRandomProjectName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Project";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
+getRandomGradingName : function(){
+	var stringValue = this
+				.getRandomString(7,
+						"abcdefghijklmnopqrstuvwxyz1234567890");
+		var uniqueValue = "Grading";
+		var randomodomainname = (stringValue + uniqueValue);
+		return randomodomainname;
+	
+},
 
 }

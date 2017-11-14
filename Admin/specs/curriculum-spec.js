@@ -15,9 +15,17 @@ describe("createorgination",function(){
 		
     });
 	
-     it("curriculum With All Activities with Major , Hidedescription And Schduled",function(){
+   /*  it("curriculum With All Activities with Major , Hidedescription And Schduled",function(){
 		 curriculum.createCurriculumWithAllActivitieswithMajorAndHidedescriptionAndSchduled();
 	 });
+	*/
+	it("create Curriculum With Two Section One with majoractivities And Another With Schduled",function(){
+		 curriculum.createCulumWithAllActivitiesAndMajor();
+	 });
 	
+	
+	/*it("create Curriculum With Two Section One with majoractivities And Another With Schduled",function(){
+		 curriculum.createCurriculumWithTwoSectionOnewithmajoractivitiesAndAnotherWithSchduled();
+	 });*/
 	
 	});

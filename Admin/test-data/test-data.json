@@ -1,10 +1,10 @@
 {
 "testData":{
 "environment":{
-"url":"https://qa.revature.com/core"
+"url":"https://dev.revature.com/core"
 },
 "loginCredential":{
-"userName":"rktradmin@yopmail.com",
+"userName":"devtraineadmin@yopmail.com ",
 "password":"Pass123$"
 },
 "salesforcecode":{

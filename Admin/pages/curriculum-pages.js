@@ -6,9 +6,9 @@ var curriculumPages = function(){
 	var duration = element(by.id("curriculumForm:durationId"));
 	var addNewSection = element(by.id("curriculumForm:addNewSection"));
 	var sectionTitle = element(by.name("curriculumForm:sectionTitleId"));
-	var saveSection = element(by.id("curriculumForm:j_idt496"));
+	var saveSection = element(by.xpath("//*[@id='curriculumForm:sectionAddPanId']/div[2]/input"));
 	var saveCurriculum = element(by.xpath(".//*[@id='curriculumForm:saveCurriculumBtn']"));
-	var addActivity = element(by.linkText("Add Activity"));
+	
 		
 	var activityName = element(by.id("curriculumForm:activityTitleId"));
 	var selectActvityType = element(by.xpath(".//*[@id='curriculumForm:activityTypeId']"));
@@ -28,7 +28,7 @@ var curriculumPages = function(){
 	var videoHideDescription = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[1]/div[5]/div/div/input"));
 	var projectHideDescription = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[1]/div[4]/div/div/input"));
 	
-	var schedulingQuizButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[1]/div/div/input"));
+	var schedulingQuizButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[2]/div[1]/div/div/input"));
 	var schduleReferenceButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[2]/div[1]/div/div/input"));
 	var schedulingLectureButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[2]/div[1]/div/div/input"));
 	var schedulingAssignmentButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[1]/div/div/input"));
@@ -37,10 +37,10 @@ var curriculumPages = function(){
 	var schedulingProjectButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[2]/div[1]/div/div/input"));
 	
 	
-	var maximumpoint = element(by.id("curriculumForm:actGradingId"));
+	var maximumpoint = element(by.name("curriculumForm:actGradingId"));
 	var activityduration = element(by.id("curriculumForm:actDurationId"));
 	
-	var quizHiddenButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[4]/div[1]/div/div/input"));
+	var quizHiddenButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[1]/div/div/input"));
 	var referenceHiddenButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[1]/div/div/input"));
 	var lectureHiddenButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[1]/div/div/input"));
 	var assignmentHiddenButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[5]/div[1]/div/div/input"));
@@ -49,7 +49,7 @@ var curriculumPages = function(){
 	var projectHiddenButton = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[1]/div/div/input"));
 	
 	
-	var quizMajor = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[4]/div[2]/div/div/input"));
+	var quizMajor = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[2]/div/div/input"));
 	var ReferenceMajor = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[2]/div/div/input"));
 	var LectureMajor = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[3]/div[2]/div/div/input"));
 	var AssignmentMajor = element(by.xpath(".//*[@id='curriculumForm:activityPanId']/div[1]/div[2]/fieldset[5]/div[2]/div/div/input"));
@@ -80,24 +80,24 @@ var curriculumPages = function(){
 	var saveReferenceVideo = element(by.xpath(".//*[@id='curriculumForm:j_idt744']"));
 	
 	
-	var addModule = element(by.linkText("Add Module"));
+	
 	var moduleName = element(by.id("curriculumForm:moduleTitleId"));
 	var moduleReuseableCheckBox = element(by.xpath(".//*[@id='curriculumForm:asd']/div/fieldset[1]/div[2]/div/div/input"));
 	var moduleHideDescription = element(by.xpath(".//*[@id='curriculumForm:asd']/div/fieldset[1]/div[5]/div/div/input"));
 	var moduleSchedule	= element(by.xpath(".//*[@id='curriculumForm:asd']/div/fieldset[2]/div[1]/div/div/input"));
 	var moduleDuration = element(by.id("curriculumForm:moduleDurationId"));
 	var moduleHidden = element(by.xpath(".//*[@id='curriculumForm:asd']/div/fieldset[3]/div/div/div/input"));
-	var moduleSave = element(by.xpath(".//*[@id='curriculumForm:j_idt595']"));
-	var addActivityinmodule = element(by.xpath(".//*[@id='curriculumForm:j_idt275:0:j_idt289:0:addNewActivity']"));
+	var moduleSave = element(by.xpath("//*[@id='curriculumForm:asd2']/div/input"));
+
 	
 	
 	
 	
-	this.clickAddModule = function(){
-		addModule.click();
+	this.clickAddModule = function(no){
+	element(by.xpath("//*[@class='dd dd-draghandle cur-tree-width']/ol/li["+no+"]/div[2]/div/a[1]")).click();
 	};
-	this.enterModuleName = function(moduleName){
-		moduleName.sendKeys(moduleName);
+	this.enterModuleName = function(moduleNames){
+		moduleName.sendKeys(moduleNames);
 	};
 	
 	this.clickModuleReuseableCheckBox = function(){
@@ -118,8 +118,10 @@ var curriculumPages = function(){
 	this.clickModuleSave= function(){
 		moduleSave.click();
 	};
-	this.clickAddActivityinmodule = function(){
-		addActivityinmodule.click();
+	this.clickAddActivityinmodule = function(secno,modno){
+		
+		element(by.xpath("//*[@class='dd dd-draghandle cur-tree-width']/ol/li["+secno+"]/ol/li["+modno+"]/div[2]/div/a[1]")).click();;
+		//element(by.xpath("html/body/div[2]/div[2]/div/form/div/div[3]/div[1]/span/span/div/div/div[3]/div/ol/li/ol/li["+no+"]/div[2]/div/a[1]")).click();
 	};
 	
 	
@@ -142,8 +144,8 @@ var curriculumPages = function(){
 		creatNewCurriculum.click();
 	};
 	
-	this.enterCurriculumTitle = function(){
-		title.sendKeys("testsd");
+	this.enterCurriculumTitle = function(curriculumtitle){
+		title.sendKeys(curriculumtitle);
 	};
 	this.enterCurrilculumDuration = function(){
 		duration.sendKeys("12");
@@ -161,8 +163,8 @@ var curriculumPages = function(){
 	this.clickSaveCurriculum=function() {
 		saveCurriculum.click();
 	};
-	this.clickAddActivity = function(){
-		addActivity.click();
+	this.clickAddSectionActivity = function(no){
+		element(by.xpath("//*[@class='dd dd-draghandle cur-tree-width']/ol/li["+no+"]/div[2]/div/a[2]")).click();
 	};
 	this.enterActivityName=function(activityname){
 		activityName.sendKeys(activityname);
@@ -173,15 +175,17 @@ var curriculumPages = function(){
 	this.clickSelectQuiz = function(){
 		selectQuiz.click();
 	};
-	this.enterquizname=function(){
+	this.enterquizname=function(no){
 		//enterquiz.sendKeys("1707 - Information Security",protractor.Key.ENTER);
 		enterquiz.click();
+		//browser.element(by.xpath(".//*[@class='select2-results']/li["+no+"]"));
 	};
 	
 	this.ClickSelectVideo=function(){
 		selectVideo.click();
 	};
-	this.enterVideoName=function(){
+	this.enterVideoName=function(no){
+		//browser.element(by.xpath(".//*[@class='select2-results']/li["+no+"]"));
 		enderVideo.click();
 		//enderVideo.sendKeys("Angular 2 - Architecture",protractor.Key.ENTER);
 	};
